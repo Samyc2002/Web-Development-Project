@@ -1,0 +1,30 @@
+@media screen and (max-width: 1500px) {
+    .menu {
+        display: none;
+    }
+    .nav-mob {
+        float: right;
+        margin: 10px;
+        margin-right: 20px;
+        font-size: large;
+        color: white;
+    }
+    .nav-mob #dLabel {
+        background-color: transparent;
+        border: none;
+    }
+    .nav-mob .dropdown-menu {
+        right: 0;
+        left: auto;
+    }
+}
+@media screen and (max-width: 382px) {
+    .bottom {
+        height: 380px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .nav-mob {
+       display: none; 
+    }
+}

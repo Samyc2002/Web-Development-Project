@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>E-Commerce Website</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="nav">
+          <div>
+              <a href="index.html"><img src="images/S_logo1_edited.png" alt="logo" class="logo"></a>
+          </div>
+          <div class="menu">
+              <a href="index.html">Home</a>
+              <a href="offers.html">Offers</a>
+              <a href="blogs.html">Blogs</a>
+              <a href="aboutus.html">About Us</a>
+              <button type="button" class="btn" data-toggle="modal" data-target=".cu">
+                <p>Contact Us</p>
+              </button>
+              <button type="button" class="btn" data-toggle="modal" data-target=".lr">
+                <p>Login/Register</p>
+              </button>
+          </div>
+          <div class="dropdown nav-mob">
+            <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dLabel" style="float: right;">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="offers.html">Offers</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li>
+                <button type="button" class="btn" data-toggle="modal" data-target=".cu" style="color: black; background: transparent; height: 35px;">
+                    <p>Contact Us</p>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="btn" data-toggle="modal" data-target=".lr" style="color: black; background: transparent; height: 35px; padding-top: 0;">
+                  <p>Login/Register</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!--CU Modal-->
+        <div class="modal fade cu" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"><strong>Contact Us</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="name" name="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="email" name="Email id" placeholder="Email id" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="query" class="form-control" id="query" name="Query" placeholder="Query" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--L/R Modal-->
+        <div class="modal fade lr" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"><strong>Login/Register</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <form name="lr">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="name" name="Name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="email" name="Email id" placeholder="Email id" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" name="Password" placeholder="Password" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--Heading-->
+        <h1 class="heading"><strong>Home</strong></h1>
+        <hr class="line">
+        <!--Tabs-->
+        <div class="tabs">
+            <ul class="nav nav-tabs t" role="tablist">
+                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Product type 1</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Product type 2</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Product type 3</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Product type 4</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="home">
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="1">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="2">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="3">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="4">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="5">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="6">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="7">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="8">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="9">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="profile">
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="10">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="11">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="12">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="13">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="14">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="15">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="16">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="17">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="18">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="messages">
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="19">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="20">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="21">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="22">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="23">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="24">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="25">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="26">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="27">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="28">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="29">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="30">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="31">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="32">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="33">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="34">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="35">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Procuct Name</h1> 
+                                <p>Product Description</p>
+                                <p class="price">Price - $10</p> 
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="36">Buy Now</button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Buy Now-->
+        <div class="modal fade" id="exampleModal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+              </div>
+              <div class="modal-body">
+                <textarea name="Address" id="address" cols="30" rows="10" placeholder="Give delivery address" style="width: 100%; height: 60px;" required></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#Modal1">Proceed to Payment</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Billing-->
+        <div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Payment Details</h4>
+              </div>
+              <div class="modal-body">
+                <form action="submit">
+                  <p>NOTE: If you want to pay by cash, enter 0 in card number</p>
+                  <input type="number" class="form-control" name="card-number" placeholder="card-number" required>
+                  <br>
+                  <input type="email" class="form-control" name="E-mail id" placeholder="E-mail id" required>
+                  <br>
+                  <input type="number" class="form-control" name="Phone Number" placeholder="Phone Number" required>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Dismiss</button>
+                    <button type="submit" class="btn btn-primary">Confirm</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Footer-->
+        <footer>
+          <div class="bottom">
+            <div class="left">
+              <h2>Quick Links</h2>
+              <hr class="underline">
+              <a href="#" class="link"><h5>Link 1</h5></a>
+              <a href="#" class="link"><h5>Link 2</h5></a>
+              <a href="#" class="link"><h5>Link 3</h5></a>
+              <a href="#" class="link"><h5>Link 4</h5></a>
+              <a href="#" class="link"><h5>Link 5</h5></a>
+              <a href="#" class="link"><h5>Link 6</h5></a>
+            </div>
+            <div class="right">
+              <h2>Contact Us</h2>
+              <hr class="underline">
+              <form name="cu">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="Name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" name="Email id" placeholder="Email id" required>
+                </div>
+                <div class="form-group">
+                    <input type="query" class="form-control" id="query" name="Query" placeholder="Query" required>
+                </div>
+                <div class="footer-btns">
+                    <button type="button" class="btn btn-default but" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary but">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script>
+          $('#exampleModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var num = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('New message')
+            modal.find('.modal-body').val(num)
+          });
+        </script>
+        <script>    //lr
+          const scriptURL = 'https://script.google.com/macros/s/AKfycby9aiSe-D-tCxBlPxuTJ8Q-jZSfDhEc6IEw3dyyB3xzYzQjW4Eri_U_21jFNlJBv58r/exec'
+            const form = document.forms['lr']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Registered...!!"))
+                .catch(error => console.error('Error!', error.message))
+            });
+        </script>
+    </body>
+</html>

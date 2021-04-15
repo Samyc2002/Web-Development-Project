@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+}
+nav {
+    background-color: #4285F4;
+    position: fixed;
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+.logo {
+    max-height: 40px;
+    max-width: 50px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    float: left;
+}
+.menu {
+    display: flex;
+    width: 33%;
+    float: right;
+}
+.menu a {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    margin-top: 13px;
+    text-decoration: none;
+}
+.menu p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;
+    margin-top: 13px;
+}
+.menu button {
+    background-color: transparent;
+    color: white;
+    border: white;
+    padding: 0;
+    max-height: 40px;
+}
+.menu button:hover {
+    background-color: transparent;
+    color: white;
+    border: black;
+    padding: 0;
+    max-height: 40px;
+}
+.menu button:active {
+    background-color: transparent;
+    color: white;
+    border: black;
+    padding: 0;
+    max-height: 40px;
+}
+.tabs {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabs .tab-content .tab-pane .row .flip-card {
+    background-color: transparent;
+    width: 30%;
+    height: 300px;
+    margin: 20px;
+    perspective: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.tabs .tab-content .tab-pane .row .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .tabs .tab-content .tab-pane .row .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .tabs .tab-content .tab-pane .row .flip-card-front, .tabs .tab-content .tab-pane .row .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .tabs .tab-content .tab-pane .row .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .tabs .tab-content .tab-pane .row .flip-card-back {
+    background-color: #ffffff;
+    color: #4285F4;
+    transform: rotateY(180deg);
+  }
+.tabs .tab-content .tab-pane .row {
+    display: flex;
+}
+.tabs .tab-content .tab-pane {
+    margin:4px, 4px;
+    padding:4px;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+    overflow-y: scroll;
+}
+.tabs .tab-content .tab-pane .row .flip-card-back .buy-now {
+    width: 80px;
+    height: 40px;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+.heading {
+    margin-left: 10%;
+}
+.line {
+    margin-left: 10%;
+    height:2px;
+    width: 5%;
+    color:gray;
+    background-color:gray;
+}
+.bottom {
+    width: 100%;
+    display: block;
+    height: 320px;
+    background: #11264a;
+    margin-bottom: 0;
+    color: white;
+}
+.bottom .left {
+    float: left;
+    margin-left: 5%;
+    width: 40%;
+}
+.bottom .right {
+    float: right;
+    margin-right: 5%;
+    width: 40%;
+}
+.underline {
+    margin-left: 0;
+    height: 1px;
+    width: 10%;
+    color:white;
+    background-color:white;
+}
+.bottom .left .link {
+    text-decoration: none;
+    color: white;
+}
+.para {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-primary {
+    background-color: #4285F4;
+    border: none;
+}
+.tabs .t a {
+    color: #4285F4;
+}
+.bottom .right .footer-btns {
+    float: right;
+}
+.bottom .right .footer-btns .but {
+    margin: 10px;
+}
+.footer-btns {
+    float: right;
+}
+.footer-btns .but {
+    margin-left: 10px;
+}

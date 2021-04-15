@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/S_logo1_edited.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+    <body>
+        <!--Navigation Bar-->
+        <nav class="nav">
+            <div>
+                <a href="index.html"><img src="images/S_logo1_edited.png" alt="logo" class="logo"></a>
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="offers.html">Offers</a>
+                <a href="blogs.html">Blogs</a>                
+                <a href="aboutus.html">About Us</a>
+                <button type="button" class="btn" data-toggle="modal" data-target=".cu">
+                    <p>Contact Us</p>
+                </button>
+                <button type="button" class="btn" data-toggle="modal" data-target=".lr">
+                    <p>Login/Register</p>
+                </button>
+            </div>
+            <div class="dropdown nav-mob">
+              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menu
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dLabel" style="float: right;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="offers.html">Offers</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                  <button type="button" class="btn" data-toggle="modal" data-target=".cu" style="color: black; background: transparent; height: 35px;">
+                      <p>Contact Us</p>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="btn" data-toggle="modal" data-target=".lr" style="color: black; background: transparent; height: 35px; padding-top: 0;">
+                    <p>Login/Register</p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <!--CU Modal-->
+        <div class="modal fade cu" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"><strong>Contact Us</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="name" name="Name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="email" name="Email id" placeholder="Email id" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="query" class="form-control" id="query" name="Query" placeholder="Query" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--L/R Modal-->
+        <div class="modal fade lr" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel"><strong>Login/Register</strong></h4>
+                </div>
+                <div class="modal-body">
+                    <form name="lr">
+                        <div class="form-group">
+                          <input type="text" class="form-control" id="name" name="Name" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                          <input type="email" class="form-control" id="email" name="Email id" placeholder="Email id" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" name="Password" placeholder="Password" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--Heading-->
+        <h1 class="heading"><strong>Offers</strong></h1>
+        <hr class="line">
+        <!--Paragraph-->
+        <p class="para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Et tortor at risus viverra adipiscing at. Amet luctus venenatis lectus magna fringilla. Quam nulla porttitor massa id neque aliquam vestibulum morbi.
+            Faucibus vitae aliquet nec ullamcorper sit amet risus. Purus sit amet luctus venenatis. Aliquet porttitor lacus luctus accumsan.
+            At imperdiet dui accumsan sit amet. In cursus turpis massa tincidunt dui ut ornare lectus.
+            Aliquet bibendum enim facilisis gravida neque convallis a.
+            Accumsan sit amet nulla facilisi morbi tempus iaculis urna.
+        </p>
+        <p class="para">
+            Facilisis magna etiam tempor orci eu lobortis elementum nibh.
+            Tempor nec feugiat nisl pretium. Congue eu consequat ac felis donec et odio.
+            Aliquet risus feugiat in ante metus. Mauris a diam maecenas sed enim ut.
+            Aliquam vestibulum morbi blandit cursus risus at ultrices. Cursus risus at ultrices mi tempus.
+            Tortor dignissim convallis aenean et tortor. Nisl suscipit adipiscing bibendum est ultricies integer quis.
+            Eget nunc lobortis mattis aliquam faucibus purus in massa. Est ante in nibh mauris cursus mattis molestie a.
+            Ipsum faucibus vitae aliquet nec. Suscipit adipiscing bibendum est ultricies. Viverra accumsan in nisl nisi.
+            Libero enim sed faucibus turpis.
+        </p>
+        <p class="para">
+            Pellentesque habitant morbi tristique senectus et netus et.
+            Cras tincidunt lobortis feugiat vivamus. Varius quam quisque id diam vel quam.
+            Adipiscing at in tellus integer feugiat scelerisque varius morbi. Risus viverra adipiscing at in.
+            Fermentum dui faucibus in ornare. Commodo odio aenean sed adipiscing diam donec.
+            Ut sem viverra aliquet eget. Ultrices dui sapien eget mi. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper.
+            Eget aliquet nibh praesent tristique magna. Duis convallis convallis tellus id interdum.
+            Sed euismod nisi porta lorem mollis aliquam ut porttitor. Turpis tincidunt id aliquet risus feugiat in.
+            Mattis pellentesque id nibh tortor id aliquet lectus proin.
+        </p>
+        <!--Footer-->
+        <footer>
+            <div class="bottom">
+              <div class="left">
+                <h2>Quick Links</h2>
+                <hr class="underline">
+                <a href="#" class="link"><h5>Link 1</h5></a>
+                <a href="#" class="link"><h5>Link 2</h5></a>
+                <a href="#" class="link"><h5>Link 3</h5></a>
+                <a href="#" class="link"><h5>Link 4</h5></a>
+                <a href="#" class="link"><h5>Link 5</h5></a>
+                <a href="#" class="link"><h5>Link 6</h5></a>
+              </div>
+              <div class="right">
+                <h2>Contact Us</h2>
+                <hr class="underline">
+                <form action="submit">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="Name" placeholder="Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="email" name="Email id" placeholder="Email id" required>
+                  </div>
+                  <div class="form-group">
+                      <input type="query" class="form-control" id="query" name="Query" placeholder="Query" required>
+                  </div>
+                  <div class="footer-btns">
+                      <button type="button" class="btn btn-default but" data-dismiss="modal">Close</button>
+                      <button type="submit" class="btn btn-primary but">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+        </footer>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycby9aiSe-D-tCxBlPxuTJ8Q-jZSfDhEc6IEw3dyyB3xzYzQjW4Eri_U_21jFNlJBv58r/exec'
+            const form = document.forms['lr']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Registered...!!"))
+                .catch(error => console.error('Error!', error.message))
+            });
+        </script>
+    </body>
+</html>
